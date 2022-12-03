@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build": "cp index.html www/index.html",
+        "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    }
+}
