@@ -7,7 +7,7 @@ const studentRouter: Router = Router()
 
 studentRouter.get(
     "/", // * URI
-    authGuard, // ! Middleware
+    // authGuard, // ! Middleware
     getListHandler // ? Handler
 )
 

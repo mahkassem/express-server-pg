@@ -59,12 +59,11 @@
         </div>
     </div>
     <script type="text/javascript">
-        var endpoint = "http://udacity-env.eba-eeua6kpt.us-east-1.elasticbeanstalk.com";
+        var endpoint = "http://localhost:3000";
         window.addEventListener("load", function (event) {
             fetch(`${endpoint}/api/student?page=1&perPage=25`, {
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhaG1lZEB0ZXN0LmNvbSIsImlhdCI6MTY3MDA5NTUyMywiZXhwIjoxNjcwMTgxOTIzfQ.L9nmol-QnCSqD93UCykLLHd0wLwEMz2SRzY_kyZnU9g"
                 }
             })
                 .then((response) => response.json())
